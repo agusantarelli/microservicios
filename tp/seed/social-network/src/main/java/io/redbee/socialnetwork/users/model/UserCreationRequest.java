@@ -6,7 +6,10 @@ import java.util.Objects;
 
 public class UserCreationRequest {
     @NotNull
-    @Pattern(regexp = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$", message = "invalid mail format")
+    @Pattern(
+            regexp = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+            message = "invalid mail format"
+    )
     private String mail;
 
     @NotNull
@@ -15,9 +18,6 @@ public class UserCreationRequest {
             message = "password must have eight characters, must have at least one letter, one number and one special character"
     )
     private String password;
-
-    public UserCreationRequest() {
-    }
 
     public String getMail() {
         return mail;
