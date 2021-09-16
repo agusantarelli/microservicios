@@ -1,5 +1,7 @@
-package io.redbee.socialnetwork.feeds.postLikes;
+package io.redbee.socialnetwork.feeds.postLikes.dao;
 
+import io.redbee.socialnetwork.feeds.postLikes.model.PostLike;
+import io.redbee.socialnetwork.feeds.postLikes.mapper.PostLikeRowMapper;
 import io.redbee.socialnetwork.shared.exception.RepositoryException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

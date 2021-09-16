@@ -1,5 +1,6 @@
-package io.redbee.socialnetwork.feeds.postLikes;
+package io.redbee.socialnetwork.feeds.postLikes.mapper;
 
+import io.redbee.socialnetwork.feeds.postLikes.model.PostLike;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

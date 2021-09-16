@@ -1,4 +1,6 @@
-package io.redbee.socialnetwork.feeds.postLikes;
+package io.redbee.socialnetwork.feeds.postLikes.model;
+
+import io.redbee.socialnetwork.feeds.postLikes.builder.PostLikeBuilder;
 
 import java.util.Objects;
 
@@ -38,5 +40,19 @@ public class PostLike {
                 "postId=" + postId +
                 ", userId=" + userId +
                 '}';
+    }
+
+    public PostLike copyPostId(Integer post_id){
+        return new PostLikeBuilder()
+                .basedOn(this)
+                .post_id(postId)
+                .build();
+    }
+
+    public PostLike copyUserId(Integer user_id){
+        return new PostLikeBuilder()
+                .basedOn(this)
+                .post_id(user_id)
+                .build();
     }
 }
